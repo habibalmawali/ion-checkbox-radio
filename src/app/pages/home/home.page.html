@@ -1,0 +1,74 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>Habib Dev.</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+
+	<ion-grid fixed>
+		<ion-row>
+			<ion-col size="6">
+				<ion-card (click)="option1=!option1">
+					<ion-card-header>
+            <ion-item lines="none">
+              <ion-label>Checkbox</ion-label>
+              <ion-checkbox [checked]="option1" slot="start"></ion-checkbox>
+            </ion-item>
+					</ion-card-header>
+					<ion-card-content class="ion-text-center">
+						Awesome content
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col size="6">
+				<ion-card (click)="option2=!option2">
+					<ion-card-header>
+            <ion-item lines="none">
+              <ion-label>Checkbox</ion-label>
+              <ion-checkbox [checked]="option2" slot="start"></ion-checkbox>
+            </ion-item>
+					</ion-card-header>
+					<ion-card-content class="ion-text-center">
+						Awesome content
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+
+
+
+  <ion-radio-group name="auto" [value]="options">
+    <ion-row>
+			<ion-col size="6">
+				<ion-card (click)="options='option3'">
+					<ion-card-header>
+            <ion-item lines="none">
+              <ion-label>Title</ion-label>
+              <ion-radio value="option3"></ion-radio>
+            </ion-item>
+					</ion-card-header>
+					<ion-card-content class="ion-text-center">
+						Awesome content
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col size="6">
+				<ion-card (click)="options='option4'">
+					<ion-card-header>
+            <ion-item lines="none">
+              <ion-label>Title</ion-label>
+              <ion-radio value="option4"></ion-radio>
+            </ion-item>
+					</ion-card-header>
+					<ion-card-content class="ion-text-center">
+						Awesome content
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+  </ion-radio-group>
+
+	</ion-grid>
+
+</ion-content>
